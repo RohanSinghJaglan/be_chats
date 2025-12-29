@@ -27,6 +27,8 @@ docker-compose up -d --build
 docker-compose exec app php artisan migrate
 ```
 
+> **Note on AI Features**: To enable the AI rewriting capabilities, a valid `OPENAI_API_KEY` must be configured in `backend/.env`. If this key is missing or invalid, the pipeline will automatically operate in **Mock Mode**, generating placeholder text for demonstration purposes.
+
 ### 2. Start Frontend
 ```bash
 cd frontend
